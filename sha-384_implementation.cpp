@@ -1,9 +1,8 @@
 ﻿// sha-384_implementation.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
-#include "SHA384Utils.h"
-#include "SHA384.h"
-
 #include <iostream>
+//#include "SHA384Utils.h"
+#include "SHA384.h"
 
 int main()
 {
