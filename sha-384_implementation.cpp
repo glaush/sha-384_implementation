@@ -1,10 +1,17 @@
 ﻿// sha-384_implementation.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
+#include "SHA384Utils.h"
+#include "SHA384.h"
 
 #include <iostream>
 
 int main()
 {
+    Message<std::string>::set_message("abc");
+
+    SHA384<std::string> obj(Message<std::string>::get_message());
+
+
     std::cout << "Hello World!\n";
 }
 
