@@ -21,9 +21,7 @@ int main()
 								std::ifstream file(path_to_file);
 								
 								if (file.is_open())
-								{
 												file >> message;
-								}
 								else
 												throw std::runtime_error("Error with file!\n");
 				}
@@ -35,7 +33,6 @@ int main()
 								std::cin.clear();
 								getline(std::cin, message, '\n');
 
-								/*Message<std::string>::set_message("abc");*/
 				}
 
 				Message<std::string>::set_message(message);
@@ -46,11 +43,10 @@ int main()
 
 				std::cout << Message<std::string>::get_digest() << std::endl;
 
+				return 0;
 				}
 				catch (const std::exception& e)
 				{
 							std::cout <<	e.what() << std::endl;
 				}
-				
-				return 0;
 }
